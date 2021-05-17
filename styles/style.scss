@@ -1,0 +1,35 @@
+$BrightOrange: hsl(31, 77%, 52%);
+$DarkCyan: hsl(184, 100%, 22%);
+$VeryDarkCyan: hsl(179, 100%, 13%);
+$VeryLightGray: hsl(0, 0%, 95%);
+*{
+    margin: 0;
+    border: 0;
+}
+body{
+    background-color: $VeryLightGray;
+    height: 100vh;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 50px;
+    .col{
+        padding: 10px;
+        height: 500px;
+    }
+    .col1{
+        background-color: $BrightOrange;
+    }
+    .col2{
+        background-color: $DarkCyan;
+    }
+    .col3{
+        background-color: $VeryDarkCyan;
+    }
+
+}
+
