@@ -5,21 +5,38 @@ $VeryLightGray: hsl(0, 0%, 95%);
 *{
     margin: 0;
     border: 0;
+    font-family: 'Lexend Deca', sans-serif;
 }
 body{
     background-color: $VeryLightGray;
-    height: 100vh;
+    height: 90vh;
 }
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
     padding: 50px;
     .col{
-        padding: 10px;
+        padding: 50px;
         height: 500px;
+        color: $VeryLightGray;
+
+        svg{
+            padding-bottom: 20px;
+        }
+        h1{
+            padding-bottom: 20px;
+        }
+        input {
+            border-radius: 25px;
+            padding: 15px;
+            margin: 5px;
+            cursor: pointer;
+            margin-top: 250px;
+        }
     }
     .col1{
         background-color: $BrightOrange;
@@ -33,3 +50,10 @@ body{
 
 }
 
+@media screen and (max-width: 800px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
